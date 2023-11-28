@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Map with Markers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Set the map container size */
+        #map {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    <script>
+        var map = L.map('map').setView([0, 0], 2); // Initial map center and zoom level
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var markers = L.markerClusterGroup(); // Create a marker cluster group to handle multiple markers
+
+        // Add markers with coordinates (latitude, longitude)
+        var locations = [
+            [12.9350817, 77.5360407]
+            [12.9347552, 77.5401952]
+            [12.9344287, 77.5443908]
+            [12.9341022, 77.5485864]
+            [12.9334642, 77.5569848]
+            [12.9331527, 77.5611876]
+            [12.9328412, 77.5654568]
+            [12.9322182, 77.5739952]
+            [12.9319067, 77.5782644]
+            [12.9315952, 77.5825164]
+            [12.9312837, 77.5867684]
+            [12.9309722, 77.5910204]
+            [12.9306607, 77.5952724]
+            [12.9303492, 77.5995244]
+            [12.9300377, 77.6037764]
+            [12.9297262, 77.6080284]
+            [12.9294147, 77.6122668]
+            [12.9291032, 77.6165052]
+            [12.9165847, 77.6219296]
+        ];
+
+        for (var i = 0; i < locations.length; i++) {
+            var marker = L.marker(locations[i]);
+            markers.addLayer(marker);
+        }
+
+        map.addLayer(markers);
+    </script>
+</body>
+</html>

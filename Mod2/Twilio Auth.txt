@@ -1,0 +1,8 @@
+Account SID 
+AC32d193612554c3838e66a0d927c7b9fb
+
+Auth Token
+9ec3883047408abef629fe6d0b362cac
+
+Twilio Number
++15637702700
