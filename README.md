@@ -1,3 +1,1 @@
 # Code-Of-Honor---Xtinguish
-
-#Update It Later...
