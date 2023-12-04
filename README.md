@@ -47,7 +47,7 @@ RoadGuard transforms road safety with its computer vision-driven sign detection 
 Be a part of our journey to enhance RoadGuard's capabilities. Your contributions are invaluable. Refer to our Contribution Guidelines for seamless collaboration.
 
 ## 📄 License
--Nil-
+This project operates under a yet-to-be-determined license.
 
 ## 🙏 Acknowledgements
 Our journey is illuminated by the brilliance of the open-source community and the visionary developers behind the tools and libraries that empower RoadGuard.
